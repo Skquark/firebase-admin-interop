@@ -909,13 +909,13 @@ abstract class FcmOptions {
 @anonymous
 abstract class MessagingPayload {
   /// The data message payload.
-  external DataMessagePayload get data;
+  external List<DataMessagePayload> get data;
 
   /// The notification message payload.
   external NotificationMessagePayload get notification;
 
   external factory MessagingPayload({
-    DataMessagePayload data,
+    List<DataMessagePayload> data,
     NotificationMessagePayload notification,
   });
 }
